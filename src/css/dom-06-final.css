@@ -1,0 +1,102 @@
+:root {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  :root,
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  main {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button,
+  .cl-action {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+  
+    font-weight: bold;
+  }
+  
+  .cl-primary {
+    color: #0000ff;
+  }
+  
+  .cl-warn {
+    color: #ff0000;
+  }
+  
+  .cl-primary:disabled,
+  .cl-warn:disabled {
+    opacity: 0.5;
+  }
+  
+  .cl-filler {
+    flex: 1 0 auto;
+  }
+  
+  button > *,
+  .cl-action > * {
+    pointer-events: none;
+  }
+  
+  input[type='number'],
+  .cl-number {
+    font-family: monospace;
+    text-align: right;
+  }
+  
+  .cmp-input-no {
+    display: inline-block;
+    width: 3ch;
+    flex: 1 0 auto;
+  }
+  
+  .cmp-input-title {
+    display: inline-flex;
+    flex-direction: row;
+    width: 13ch;
+    align-self: center;
+  }
+  
+  .cmp-input-title::after {
+    content: '::';
+    color: blue;
+    padding-left: 1ch;
+    padding-right: 1ch;
+  }
+  
+  .cmp-input-container,
+  .cmp-output-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+  .cmp-input-container > label,
+  .cmp-output-container > label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  
+  .cmp-output-container {
+    margin-top: 4px;
+  }
+  
+  .cmp-inputs-container {
+    display: grid;
+    row-gap: 4px;
+  }
+  
+  .cmp-result {
+    font-size: 0.82em;
+    margin-right: 8.2ch;
+  
+    font-weight: bold;
+    text-decoration: underline double;
+  }
